@@ -8,7 +8,7 @@ public class Main extends JavaPlugin {
     public void onEnable() {
         Bukkit.getLogger().info("GVO-PLUGIN: Plugin established.");
         getServer().getPluginManager().registerEvents(new ChatListener(), this);
-        this.getCommand("me.goodvibes.BanManager").setExecutor(new BanManager());
+        this.getCommand("BanManager").setExecutor(new BanManager());
     }
 
     @Override

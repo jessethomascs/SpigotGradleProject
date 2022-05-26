@@ -3,3 +3,8 @@ version: 1.0 # the plugin's version
 author: Jesse Thomas
 main: me.goodvibes.Main
 api-version: 1.18 # the version of the AIP you want to use, required starting with 1.13
+commands:
+  BanManager:
+    description: The Manager of Bans
+    usage: /BanManager
+    permission: GoodVibesOnly.BanManager
