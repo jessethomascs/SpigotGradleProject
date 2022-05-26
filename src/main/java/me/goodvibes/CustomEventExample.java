@@ -1,3 +1,5 @@
+package me.goodvibes;
+
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 
