@@ -8,3 +8,11 @@ commands:
     description: The Manager of Bans
     usage: /BanManager
     permission: GoodVibesOnly.BanManager
+  TeleportManager:
+    description: The manager of Teleport
+    usage: /TeleportManager
+    permission: GoodVibesOnly.TeleportManager
+  tpa:
+    description: Teleport request another player
+    usage: /tpa <user>
+    permission: GoodVibesOnly.TeleportManager.tpa
