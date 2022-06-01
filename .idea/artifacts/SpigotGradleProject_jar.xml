@@ -1,8 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="SpigotGradleProject:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/SpigotGradleProject_jar</output-path>
-    <root id="archive" name="SpigotGradleProject.jar">
-      <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/plugin.yml" />
-    </root>
+    <output-path>$PROJECT_DIR$/../..</output-path>
+    <root id="archive" name="SpigotGradleProject.jar" />
   </artifact>
 </component>
