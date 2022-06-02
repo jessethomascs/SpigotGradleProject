@@ -4,15 +4,31 @@ author: Jesse Thomas
 main: me.goodvibes.Main
 api-version: 1.18 # the version of the AIP you want to use, required starting with 1.13
 commands:
-  BanManager:
+  cBan:
     description: The Manager of Bans
-    usage: /BanManager
+    usage: /cBan <player> <reason>
     permission: GoodVibesOnly.BanManager
-  TeleportManager:
-    description: The manager of Teleport
-    usage: /TeleportManager
-    permission: GoodVibesOnly.TeleportManager
-  tpa:
-    description: Teleport request another player
-    usage: /tpa <user>
-    permission: GoodVibesOnly.TeleportManager.tpa
+  cKick:
+    description: Kicks a player from the server
+    usage: /cKick <player> <reason>
+    permission: GoodVibesOnly.BanManager.cKick
+  cUnban:
+    description: Unbans a player from the esrver
+    usage: cUnban <player> <reason>
+    permission: GoodVibesOnly.BanManager.cUnban
+  cEconomyManager:
+    description: Economy Manager
+    usage: /EconomyManager
+    permission: GoodVibesOnly.EconomyManager
+  cBalance:
+    description: Checks your own balance
+    usage: /cBalance
+    permission: GoodVibesOnly.EconomyManager.cBalance
+  cPay:
+    description: Pays another player money from your wallet into theirs
+    usage: /cPay <who> <amount>
+    permission: GoodVibesOnly.EconomyManager.cPay
+  cEventStart:
+    description: Broadcasts and/or starts an event on the server/for the server for CSSA
+    usage: /EventStart <event name> <time (e.g. 1s, 1m, 1h, 1d, 1w, 1m)>
+    permission: GoodVibesOnly.EventManager.cEventStart
