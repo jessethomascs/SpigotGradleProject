@@ -13,7 +13,7 @@ commands:
     usage: /cKick <player> <reason>
     permission: GoodVibesOnly.BanManager.cKick
   cUnban:
-    description: Unbans a player from the esrver
+    description: Unbans a player from the server
     usage: cUnban <player> <reason>
     permission: GoodVibesOnly.BanManager.cUnban
   cEconomyManager:
