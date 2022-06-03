@@ -21,7 +21,7 @@ public class ChatListener implements Listener {
 
     @EventHandler
     public void AsyncPlayerChatEvent(AsyncPlayerChatEvent chat) {
-        if (chat.getMessage().equals("who's joe".toLowerCase(Locale.ROOT))) { // todo: this is a testing function, remove after use
+        if (chat.getMessage().equals("who's joe")) { // todo: this is a testing function, remove after use
             chat.getPlayer().sendMessage("original: " + chat.getMessage());
             chat.getPlayer().sendMessage("Your format: " + chat.getFormat());
             chat.getPlayer().sendMessage("Event name: " + chat.getEventName());

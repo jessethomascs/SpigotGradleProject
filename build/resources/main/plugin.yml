@@ -1,5 +1,34 @@
-name: GoodVibesOnly # the plugins name as it should appear in the plugin list /pl
+name: SpigotGradleProject # the plugins name as it should appear in the plugin list /pl
 version: 1.0 # the plugin's version
 author: Jesse Thomas
-main: me.Jesse.SpigotGradleProject.Main
-api-version: # the version of the API you want to use, required starting with 1.13
+main: me.goodvibes.Main
+api-version: 1.18 # the version of the AIP you want to use, required starting with 1.13
+commands:
+  cBan:
+    description: The Manager of Bans
+    usage: /cBan <player> <reason>
+    permission: GoodVibesOnly.BanManager
+  cKick:
+    description: Kicks a player from the server
+    usage: /cKick <player> <reason>
+    permission: GoodVibesOnly.BanManager.cKick
+  cUnban:
+    description: Unbans a player from the server
+    usage: cUnban <player> <reason>
+    permission: GoodVibesOnly.BanManager.cUnban
+  cEconomyManager:
+    description: Economy Manager
+    usage: /EconomyManager
+    permission: GoodVibesOnly.EconomyManager
+  cBalance:
+    description: Checks your own balance
+    usage: /cBalance
+    permission: GoodVibesOnly.EconomyManager.cBalance
+  cPay:
+    description: Pays another player money from your wallet into theirs
+    usage: /cPay <who> <amount>
+    permission: GoodVibesOnly.EconomyManager.cPay
+  cEventStart:
+    description: Broadcasts and/or starts an event on the server/for the server for CSSA
+    usage: /EventStart <event name> <time (e.g. 1s, 1m, 1h, 1d, 1w, 1m)>
+    permission: GoodVibesOnly.EventManager.cEventStart
