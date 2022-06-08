@@ -10,14 +10,30 @@ package me.goodvibes.Config;
 
 import me.goodvibes.Main;
 import org.bukkit.Bukkit;
+import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.event.Listener;
 
+import java.util.List;
+
 public class Config implements Listener {
-    public Config(Main plugin) {
+
+    Main plugin;
+    FileConfiguration configFile;
+
+    public Config(Main plugin, FileConfiguration configFile) {
+        this.plugin = plugin;
+        this.configFile = configFile;
+
         plugin.saveDefaultConfig();
         String temp = plugin.getCustomConfiguration().getString("version");
         Bukkit.broadcastMessage("[GVO-PLUGIN] - " + temp);
     }
 
+    public String retrieveString(String configLineName) {
+        return configFile.getString("internalWhitelist");
+    }
 
+    public boolean storeNewLine(String info) {
+        return false;
+    }
 }

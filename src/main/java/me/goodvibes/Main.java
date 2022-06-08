@@ -25,8 +25,8 @@ public class Main extends JavaPlugin {
 
         // Listeners
         getServer().getPluginManager().registerEvents(new ChatListener(), this);
-        getServer().getPluginManager().registerEvents(new UnknownPlayers(), this);
-        getServer().getPluginManager().registerEvents(new Config(this), this);
+        getServer().getPluginManager().registerEvents(new UnknownPlayers(new Config(this, getCustomConfiguration())), this);
+        getServer().getPluginManager().registerEvents(new Config(this, getCustomConfiguration()), this);
 
         // Command registering
         this.getCommand("cBan").setExecutor(new cBan());
@@ -39,6 +39,7 @@ public class Main extends JavaPlugin {
         return this.customConfiguration;
     }
 
+    // Setup configuration first time
     private void createCustomConfiguration() {
         configurationFile = new File(getDataFolder(), "config.yml");
         if (!configurationFile.exists()) {
