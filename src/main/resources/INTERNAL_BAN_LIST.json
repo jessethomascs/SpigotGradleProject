@@ -1,0 +1,13 @@
+{
+  "Usernames": [
+    {
+      "Username": "username_here",
+      "IP Address": "address_here"
+    },
+
+    {
+      "Username": "another_name_here",
+      "IP Address": "another_address_here"
+    }
+  ]
+}

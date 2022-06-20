@@ -1,2 +1,8 @@
+# Put as '1.0' to reset configuration file manually
 version: 1.0
+
+# Internal whitelist for development use. Code will check this list dependently with server whitelist (ops can't whitelist people then)
+# Put as 'dev-mode: false' to disable. Set to true to enable.
+dev-mode: true
 internalWhitelist: Jkibbels,Leonidas_743,Seaw13,GhostGirl1011,cooliobeans01
+

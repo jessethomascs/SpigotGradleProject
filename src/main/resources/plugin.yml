@@ -32,3 +32,7 @@ commands:
     description: Broadcasts and/or starts an event on the server/for the server for CSSA
     usage: /EventStart <event name> <time (e.g. 1s, 1m, 1h, 1d, 1w, 1m)>
     permission: GoodVibesOnly.EventManager.cEventStart
+  cWhitelist:
+    description: Adds a player to both the internal whitelist and server whitelist
+    usage: /cWhitelist <name> OR <name>,<name2>,<name3>,...
+    permission: GoodVibesOnly.Configurations.cWhitelist

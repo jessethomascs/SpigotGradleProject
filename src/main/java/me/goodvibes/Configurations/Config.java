@@ -6,14 +6,12 @@ Hierarchy: NOT APPLICABLE - UTILITY CLASS
 Purpose: Handles everything configuration wise. Dependency injection of Main is also held here, easily tracked more.
 */
 
-package me.goodvibes.Config;
+package me.goodvibes.Configurations;
 
 import me.goodvibes.Main;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.event.Listener;
-
-import java.util.List;
 
 public class Config implements Listener {
 

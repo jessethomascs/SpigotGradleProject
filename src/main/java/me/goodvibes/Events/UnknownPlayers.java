@@ -8,16 +8,12 @@ Purpose: Strictly for players attempting to log in who aren't on whitelist. Bans
 
 package me.goodvibes.Events;
 
-import me.goodvibes.Config.Config;
+import me.goodvibes.Configurations.Config;
 import org.bukkit.BanList;
 import org.bukkit.Bukkit;
-import org.bukkit.OfflinePlayer;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerPreLoginEvent;
-
-import java.net.InetAddress;
-import java.util.UUID;
 
 public class UnknownPlayers implements Listener {
 
